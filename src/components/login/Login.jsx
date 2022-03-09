@@ -1,34 +1,34 @@
+import Layout from "../layout/Layout";
+
 export default function Login() {
   return (
-    <>
-      <div className="formulari">
-        <form>
-          <div className="form-group">
-            <label htmlFor="">Email address</label>&nbsp;
-            <input type="text" placeholder="Enter email" />
-          </div>
+    <div class="app">
+      <div class="bg"></div>
 
-          <div className="form-group">
-            <label htmlFor="">Password</label>&nbsp;
-            <input type="text" placeholder="Enter password" />
-          </div>
+      <form>
+        <header>
+          <img src="https://assets.codepen.io/3931482/internal/avatars/users/default.png?format=auto&height=80&version=1592223909&width=80" />
+        </header>
+        <div class="inputs">
+          <input type="text" name="" placeholder="username or email" />
+          <input type="password" name="" placeholder="password" />
 
-          <div class="form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="exampleCheck1"
-            />
-            <label class="form-check-label" for="exampleCheck1">
-              Check me out
-            </label>
-          </div>
+          <p class="light">
+            <a href="#">Forgot password?</a>
+          </p>
+        </div>
+      </form>
 
-          <button type="submit" class="btn btn-primary">
-            Submit
-          </button>
-        </form>
-      </div>
-    </>
+      <footer>
+        <button>
+          <a href="Layout.jsx" onClick={<Layout />}>
+            Continue
+          </a>
+        </button>
+        <p>
+          Don't have an account? <a href="#">Sign Up</a>
+        </p>
+      </footer>
+    </div>
   );
 }

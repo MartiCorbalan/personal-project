@@ -1,0 +1,22 @@
+.contenedor1 {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+
+  overflow: hidden;
+}
+
+.contenedor-articulo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  width: 30%;
+  background: rgb(221, 215, 215);
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 45px 30px 60px 30px;
+  text-align: center;
+}

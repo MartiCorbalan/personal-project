@@ -1,14 +1,20 @@
-import "./App.css";
-import "./style.css";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 
-import Login from "./components/login/Login";
+import Layout from "./components/layout/Layout";
+import Llista from "./components/llista/Llista";
+import Main from "./components/main/Main";
 function App() {
   return (
-    <body>
-      <div className="general">
-        <Login />
-      </div>
-    </body>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Main />} />
+          {Llista.map((item) => (
+            <Route path={item.path} element={item.element} />
+          ))}
+        </Route>
+      </Routes>
+    </HashRouter>
   );
 }
 
