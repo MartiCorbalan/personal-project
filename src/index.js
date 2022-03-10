@@ -7,6 +7,7 @@ import "./quizz.css";
 import "./layout.css";
 import "./main.css";
 import "./App.css";
+import "./notes.css";
 import "./tres_en_ratlla.css";
 
 ReactDOM.render(
