@@ -90,6 +90,7 @@ export default function Quizz() {
             {questions[preguntaActual].respostaOptions.map(
               (respostaOptions) => (
                 <button
+                  className="btn-quiz"
                   onClick={() => handleAnswerClick(respostaOptions.isCorrect)}
                 >
                   {respostaOptions.respostaText}

@@ -55,7 +55,7 @@
   justify-content: space-between;
 }
 
-button {
+.btn-quiz {
   width: 100%;
   font-size: 16px;
   color: #ffffff;
@@ -69,14 +69,14 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.btn-quiz:hover {
   background-color: #555e7d;
 }
 
-button:focus {
+.btn-quiz:focus {
   outline: none;
 }
 
-button svg {
+.btn-quiz svg {
   margin-right: 5px;
 }
