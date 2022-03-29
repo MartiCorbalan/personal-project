@@ -12,8 +12,11 @@ export default function Layout() {
 
       <nav>
         <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
           {Llista.map((item) => (
-            <li>
+            <li className="links">
               <Link to={item.path}>{item.titol}</Link>
             </li>
           ))}

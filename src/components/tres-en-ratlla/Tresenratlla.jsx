@@ -83,6 +83,7 @@ function Tresenratlla() {
         if (array[a] === array[b] && array[a] === array[c]) {
           setGuanyador(array[a]);
           setAcabar(true);
+          
         }
       }
     }
